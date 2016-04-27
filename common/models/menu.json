@@ -1,0 +1,29 @@
+{
+  "name": "Menu",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "publishDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cafe": {
+      "type": "belongsTo",
+      "model": "Cafe",
+      "foreignKey": ""
+    },
+    "menuItems": {
+      "type": "hasMany",
+      "model": "MenuItem",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

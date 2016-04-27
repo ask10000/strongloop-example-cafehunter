@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqltestschema": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "TestSchema",
+    "username": "developer",
+    "password": "Developer@mysql",
+    "name": "mysqltestschema",
+    "connector": "mysql",
+    "user": "ajit_kulkarni@hotmail.com"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Cafe",
+  "plural": "Cafes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "geopoint",
+      "required": true
+    },
+    "wifi": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Review",
+      "foreignKey": ""
+    },
+    "reviewers": {
+      "type": "hasMany",
+      "model": "Reviewer",
+      "foreignKey": ""
+    },
+    "menus": {
+      "type": "hasMany",
+      "model": "Menu",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

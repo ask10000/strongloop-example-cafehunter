@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mysqltestschema"
+  },
+  "AccessToken": {
+    "dataSource": "mysqltestschema",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysqltestschema",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysqltestschema",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mysqltestschema",
+    "public": false
+  },
+  "Cafe": {
+    "dataSource": "mysqltestschema",
+    "public": true
+  },
+  "Review": {
+    "dataSource": "mysqltestschema",
+    "public": true
+  },
+  "Reviewer": {
+    "dataSource": "mysqltestschema",
+    "public": true
+  },
+  "Menu": {
+    "dataSource": "mysqltestschema",
+    "public": true
+  },
+  "MenuItem": {
+    "dataSource": "mysqltestschema",
+    "public": false
+  }
+}
